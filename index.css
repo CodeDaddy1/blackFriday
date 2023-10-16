@@ -1,44 +1,163 @@
-body {
+/* Reset some default styles */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+/* Define fonts and basic styling */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header Styles */
+header {
+    background-color: #005050;
+    color: #fff;
+    padding: 20px 0;
+}
+
+nav {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    height: 100vh;
-    background-color: #f7f7f7;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 0 20px;
 }
 
-.banner {
-    background-color: #C7A9B4;
-    color: #DC143C;
+.logo h1 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+}
+
+.nav-links li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #00a0a0;
+}
+
+/* Hero Section Styles */
+#hero {
+    background: url('hero-background.jpg') center/cover no-repeat;
     text-align: center;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 100px 0;
+    color: #fff;
 }
 
-.banner h1 {
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero-content h1 {
     font-size: 36px;
-    margin: 0;
+    font-weight: bold;
 }
 
-.banner p {
+.hero-content p {
     font-size: 18px;
+    margin: 20px 0;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #00a0a0;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #005050;
+}
+
+/* Content Section Styles */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.container h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Solution Card Styles */
+.solution-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.solution-card img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.solution-card h3 {
+    font-size: 20px;
     margin: 10px 0;
 }
 
-/* Optional: Add animation for eye-catching effect */
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-
-    to {
-        opacity: 1;
-    }
+/* Contact Form Styles */
+form {
+    margin-top: 20px;
 }
 
-.banner {
-    animation: fadeIn 1s ease-out;
+form label, form input, form textarea {
+    display: block;
+    margin-bottom: 10px;
 }
 
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #005050;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Media Query for Mobile Responsiveness */
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 28px;
+    }
+    
+    .hero-content p {
+        font-size: 16px;
+    }
+}

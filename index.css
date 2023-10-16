@@ -1,1 +1,44 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f7f7f7;
+}
+
+.banner {
+    background-color: #C7A9B4;
+    color: #DC143C;
+    text-align: center;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.banner h1 {
+    font-size: 36px;
+    margin: 0;
+}
+
+.banner p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+/* Optional: Add animation for eye-catching effect */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.banner {
+    animation: fadeIn 1s ease-out;
+}
 
